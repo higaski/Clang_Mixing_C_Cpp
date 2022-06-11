@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake Clang_Mixing_C_Cpp",
+      "type": "shell",
+      "isBackground": true,
+      "command": "cmake -Bbuild -GNinja"
+    },
+    {
+      "label": "CMake Clang_Mixing_C_Cpp Clang",
+      "type": "shell",
+      "isBackground": true,
+      "command": "cmake -Bbuild -GNinja -DCMAKE_TOOLCHAIN_FILE=cmake/clang.cmake"
+    }
+  ]
+}
